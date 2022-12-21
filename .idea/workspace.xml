@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec7109e-80a5-4196-8167-72b25b7a7d25" name="Changes" comment="start project">
+    <list default="true" id="1ec7109e-80a5-4196-8167-72b25b7a7d25" name="Changes" comment="add KafkaConsumerConfig">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -156,9 +156,26 @@
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/springBootKafkaTest.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/config/KafkaConsumerConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/SpringBootKafkaTestApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/config/KafkaProducerConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/config/KafkaTopicConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springBootKafkaTest-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/springBootKafkaTest-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/2022-12-20T11-47-49_230-jvmRun1.dumpstream" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.springbootkafkatest.SpringBootKafkaTestApplicationTests.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/com.example.springbootkafkatest.SpringBootKafkaTestApplicationTests.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/example/springbootkafkatest/SpringBootKafkaTestApplicationTests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/SpringBootKafkaTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/SpringBootKafkaTestApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -235,7 +252,7 @@
       <workItem from="1671523991104" duration="2203000" />
       <workItem from="1671527241477" duration="4751000" />
       <workItem from="1671541865225" duration="793000" />
-      <workItem from="1671599932134" duration="5091000" />
+      <workItem from="1671599932134" duration="5390000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1671536268526</created>
@@ -244,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671536268526</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add KafkaConsumerConfig">
+      <created>1671607023779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671607023779</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,6 +299,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project" />
-    <option name="LAST_COMMIT_MESSAGE" value="start project" />
+    <MESSAGE value="add KafkaConsumerConfig" />
+    <option name="LAST_COMMIT_MESSAGE" value="add KafkaConsumerConfig" />
   </component>
 </project>
