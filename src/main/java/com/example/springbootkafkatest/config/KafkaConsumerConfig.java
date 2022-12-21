@@ -18,7 +18,8 @@ import java.util.Map;
 @Configuration
 public class KafkaConsumerConfig {
 
-    @Value("http://192.168.111.52:9092")
+//    @Value("http://192.168.111.52:9092")
+    @Value("192.168.111.52:9092")
     private String bootstrapServers;
 
     public Map<String,Object> consumerConfig(){
@@ -27,6 +28,7 @@ public class KafkaConsumerConfig {
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringSerializer.class);
         return props;
+
     }
 
     @Bean
