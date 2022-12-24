@@ -1,13 +1,11 @@
 package com.example.springbootkafkatest;
 
 import org.springframework.kafka.core.KafkaTemplate;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("api/v1/messages")
+//@RequestMapping("api/v1/messages")
+@RequestMapping("/kafka")
 public class MessageController {
 
     private KafkaTemplate<String, String> kafkaTemplate;
@@ -16,7 +14,7 @@ public class MessageController {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    @PostMapping
+    @GetMapping("publish/{message}")
     public void publish(@RequestBody MessageRequest request) {
         kafkaTemplate.send("erfancode", request.message());
     }

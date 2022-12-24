@@ -1,7 +1,6 @@
 package com.example.springbootkafkatest.config;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
-import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -18,13 +17,13 @@ import java.util.Map;
 @Configuration
 public class KafkaConsumerConfig {
 
-//    @Value("http://192.168.111.52:9092")
+    //    @Value("http://192.168.111.52:9092")
     @Value("192.168.111.52:9092")
     private String bootstrapServers;
 
-    public Map<String,Object> consumerConfig(){
-        Map<String,Object> props = new HashMap<>();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG,bootstrapServers);
+    public Map<String, Object> consumerConfig() {
+        Map<String, Object> props = new HashMap<>();
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringSerializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, StringSerializer.class);
         return props;
@@ -32,18 +31,19 @@ public class KafkaConsumerConfig {
     }
 
     @Bean
-    public ConsumerFactory<String,String> consumerFactory(){
+    public ConsumerFactory<String, String> consumerFactory() {
         return new DefaultKafkaConsumerFactory<>(consumerConfig());
     }
 
     public KafkaListenerContainerFactory<
-            ConcurrentMessageListenerContainer<String,String>> factory (
-            ConsumerFactory<String,String> consumerFactory
-    ){
-        ConcurrentKafkaListenerContainerFactory<String,String> factory =
+            ConcurrentMessageListenerContainer<String, String>> factory(
+            ConsumerFactory<String, String> consumerFactory
+    ) {
+        ConcurrentKafkaListenerContainerFactory<String, String> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory);
         return factory;
     }
 
 }
+
