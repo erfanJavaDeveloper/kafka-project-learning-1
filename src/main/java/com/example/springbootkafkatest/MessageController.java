@@ -1,12 +1,16 @@
 package com.example.springbootkafkatest;
 
+import com.example.springbootkafkatest.dto.StudentDto;
+import com.example.springbootkafkatest.service.ServiceSender;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-//@RequestMapping("api/v1/messages")
 @RequestMapping("/kafka")
 public class MessageController {
+    @Autowired
+    private ServiceSender serviceSender;
 
     private KafkaTemplate<String, String> kafkaTemplate;
 
@@ -14,8 +18,9 @@ public class MessageController {
         this.kafkaTemplate = kafkaTemplate;
     }
 
-    @GetMapping("publish/{message}")
-    public void publish(@RequestBody MessageRequest request) {
-        kafkaTemplate.send("erfancode", request.message());
+    @PostMapping("publish")
+    public void publish(@RequestBody StudentDto student) {
+        kafkaTemplate.send("erfanCode", student.getName());
+        serviceSender.save(student);
     }
 }

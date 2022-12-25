@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ec7109e-80a5-4196-8167-72b25b7a7d25" name="Changes" comment="add KafkaConsumerConfig">
+    <list default="true" id="1ec7109e-80a5-4196-8167-72b25b7a7d25" name="Changes" comment="add KafkaConsumerConfig finall">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/dao/DaoSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/dto/StudentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/entity/Erfan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/service/ServiceSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/SpringBootKafkaTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/SpringBootKafkaTestApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/config/KafkaConsumerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/config/KafkaConsumerConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/config/KafkaProducerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/config/KafkaProducerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/MessageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/MessageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/SpringBootKafkaTestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/SpringBootKafkaTestApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/config/KafkaConsumerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/config/KafkaConsumerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/config/KafkaProducerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/springbootkafkatest/config/KafkaProducerConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,11 +44,15 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
@@ -63,6 +78,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../House_cleaning_service_company" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -90,7 +108,8 @@
       <workItem from="1671527241477" duration="4751000" />
       <workItem from="1671541865225" duration="793000" />
       <workItem from="1671599932134" duration="11283000" />
-      <workItem from="1671861666161" duration="8249000" />
+      <workItem from="1671861666161" duration="10534000" />
+      <workItem from="1671947372795" duration="6943000" />
     </task>
     <task id="LOCAL-00001" summary="start project">
       <created>1671536268526</created>
@@ -120,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671610959213</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add KafkaConsumerConfig finall">
+      <created>1671884873747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671884873747</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +178,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start project" />
     <MESSAGE value="add KafkaConsumerConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="add KafkaConsumerConfig" />
+    <MESSAGE value="add KafkaConsumerConfig finall" />
+    <option name="LAST_COMMIT_MESSAGE" value="add KafkaConsumerConfig finall" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/springbootkafkatest/SpringBootKafkaTestApplication.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
